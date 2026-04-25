@@ -71,4 +71,49 @@
  *           type: number
  *           example: 4500
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Order:
+ *       type: object
+ *       description: Representa un pedido del sistema
+ *       required:
+ *         - id
+ *         - customerName
+ *         - product
+ *         - quantity
+ *         - totalPrice
+ *         - status
+ *         - date
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         customerName:
+ *           type: string
+ *           example: Carlos Ramírez
+ *         product:
+ *           type: string
+ *           example: Leche entera
+ *         quantity:
+ *           type: number
+ *           example: 3
+ *         totalPrice:
+ *           type: number
+ *           example: 13500
+ *         status:
+ *           type: string
+ *           enum:
+ *             - Pendiente
+ *             - En proceso
+ *             - Entregado
+ *             - Cancelado
+ *           example: Pendiente
+ *         date:
+ *           type: string
+ *           format: date
+ *           example: 2024-04-25
+ */
 export {};
