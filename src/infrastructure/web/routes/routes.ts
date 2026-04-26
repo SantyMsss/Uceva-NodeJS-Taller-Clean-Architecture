@@ -34,7 +34,7 @@ export class AppRoutes {
     router.use("/api/users", UsersRoutes.routes);
     router.use("/api/products", ProductsRoutes.routes);
     router.use("/api/orders", OrdersRoutes.routes);
-    router.use("/api/inventories", InventoriesRoutes.routes);
+    router.use("/api/inventory", InventoriesRoutes.routes);
 
     return router;
   }
