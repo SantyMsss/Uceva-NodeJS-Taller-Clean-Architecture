@@ -116,4 +116,42 @@
  *           format: date
  *           example: 2024-04-25
  */
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Inventory:
+ *       type: object
+ *       description: Representa un registro de inventario del sistema
+ *       required:
+ *         - id
+ *         - productId
+ *         - productName
+ *         - quantity
+ *         - movements
+ *         - lastUpdated
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         productId:
+ *           type: number
+ *           example: 101
+ *         productName:
+ *           type: string
+ *           example: Portátil Dell XPS 13
+ *         quantity:
+ *           type: number
+ *           example: 100
+ *         movements:
+ *           type: string
+ *           enum:
+ *             - entrada
+ *             - salida
+ *           example: entrada
+ *         lastUpdated:
+ *           type: string
+ *           format: date-time
+ *           example: 2024-06-01T12:00:00.000Z
+ */
 export {};
